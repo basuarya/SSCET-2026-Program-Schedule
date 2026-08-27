@@ -46,6 +46,15 @@ footer{background:var(--navy);color:#c8d6e1;padding:42px 24px}.footer-inner{max-
 .pdh-legend .pdh-check{width:22px;height:22px;font-size:.8rem;flex:0 0 auto}.pdh-legend strong{color:#2a4257}
 @media(max-width:620px){.session-grid-head{grid-template-columns:84px minmax(0,1fr) 68px}.session-grid-head>div{padding:9px 8px;font-size:.6rem}.session-row{grid-template-columns:84px minmax(0,1fr) 68px}.pdh-cell{padding:10px 6px}.pdh-check{width:25px;height:25px;font-size:.9rem}.pdh-pending{min-width:34px;font-size:.55rem}.session-content{padding-right:10px}}
 @media print{.session-grid-head{display:grid!important}.pdh-check{box-shadow:none}}
+/* Give the campus-map heading and its metadata room to breathe. */
+.parking-map-toolbar{margin-bottom:18px}
+.parking-map-toolbar>div{display:flex;width:100%;align-items:baseline;justify-content:space-between;gap:clamp(1.75rem,4vw,4rem)}
+.parking-map-toolbar strong{display:block;line-height:1.2}
+.parking-map-toolbar span{display:block;flex:0 0 auto;text-align:right;white-space:nowrap}
+@media(max-width:620px){
+  .parking-map-toolbar>div{display:block}
+  .parking-map-toolbar span{margin-top:6px;text-align:left;white-space:normal}
+}
 </style>
 <style id="clean-map-overrides">
 /* OpenStreetMap / Leaflet parking map */
